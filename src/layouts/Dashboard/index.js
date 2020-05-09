@@ -1,9 +1,9 @@
-import React, { Suspense, useState } from 'react';
+import React, { Suspense } from 'react';
 import { renderRoutes } from 'react-router-config';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
 import { LinearProgress } from '@material-ui/core';
-import NavBar from './NavBar';
+// import NavBar from './NavBar';
 import TopBar from './TopBar';
 
 const useStyles = makeStyles((theme) => ({
@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: '100%',
     overflowX: 'hidden',
     [theme.breakpoints.up('lg')]: {
-      paddingLeft: 256
+      paddingLeft: 0
     },
     [theme.breakpoints.down('xs')]: {
       paddingTop: 56
@@ -30,15 +30,10 @@ const useStyles = makeStyles((theme) => ({
 
 function Dashboard({ route }) {
   const classes = useStyles();
-  const [openNavBarMobile, setOpenNavBarMobile] = useState(false);
 
   return (
     <>
-      <TopBar onOpenNavBarMobile={() => setOpenNavBarMobile(true)} />
-      <NavBar
-        onMobileClose={() => setOpenNavBarMobile(false)}
-        openMobile={openNavBarMobile}
-      />
+    <TopBar />
       <div className={classes.container}>
         <div className={classes.content}>
           <Suspense fallback={<LinearProgress />}>
