@@ -6,6 +6,8 @@
 
 ![Home Page](./img/readme.png)
 
+Click [me](https://nsdang.github.io/birthday-reminder/) to visit _Friendship Keeper_
+
 ### Overview
 - A web application that allow people to manage all their friends’ birthdays and receive notification
 beforehand for reminder.
