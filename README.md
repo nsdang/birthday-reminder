@@ -4,7 +4,7 @@
 > |  Seattle, WA
 > |  March, 2020
 
-![Home Page 1](Screenshot 2020-05-08 at 16.20.12.png)
+![Home Page](./img/readme.png)
 
 ### Overview
 • A web application that allow people to manage all their friends’ birthdays and receive notification
