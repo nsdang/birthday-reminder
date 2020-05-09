@@ -18,7 +18,7 @@ function HomePage() {
   const classes = useStyles();
 
   return (
-    <Page className={classes.root} title="Home Page">
+    <Page className={classes.root} title="Home">
       <Overview />
       <Calendar />
     </Page>
