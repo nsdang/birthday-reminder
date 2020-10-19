@@ -19,7 +19,7 @@ import './mixins/chartjs';
 import './mixins/moment';
 import './mixins/validate';
 import './mixins/prismjs';
-import './mock';
+// import './mock';
 import './assets/scss/main.scss';
 
 const history = createBrowserHistory();

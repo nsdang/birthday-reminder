@@ -21,12 +21,6 @@ function Topbar({ className, ...rest }) {
       color="primary"
     >
       <Toolbar>
-        <RouterLink to="/">
-          <img
-            alt="Logo"
-            src="/images/logos/logo--white.svg"
-          />
-        </RouterLink>
       </Toolbar>
     </AppBar>
   );

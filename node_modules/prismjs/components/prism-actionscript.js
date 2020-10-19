@@ -9,7 +9,9 @@ if (Prism.languages.markup) {
 		'xml': {
 			pattern: /(^|[^.])<\/?\w+(?:\s+[^\s>\/=]+=("|')(?:\\[\s\S]|(?!\2)[^\\])*\2)*\s*\/?>/,
 			lookbehind: true,
-			inside: Prism.languages.markup
+			inside: {
+				rest: Prism.languages.markup
+			}
 		}
 	});
 }
